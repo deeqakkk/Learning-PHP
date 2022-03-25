@@ -40,6 +40,17 @@
         $txt2="Deepak Verma";
     
         echo "<h2>".$txt1.$txt2."</h2>";
+
+        print "Deepak Verma is a good boy, currently he is learning PHP<br>";
+        print "This sentence is displayed using 'print' in PHP<br>";
+
+        print "<h2>var_dump(x) : </h2>"; var_dump(1234);
+        print "<h2>var_dump(string): </h2>"; var_dump("Deepak Verma");
+
+        $cars=array("Volvo","BMW","Toyota","Addi", "Mercedes");
+        print "<h2>var_dump(cars): </h2>"; 
+    
+        var_dump($cars);
         ?>
     </body>
 </html>
