@@ -48,9 +48,17 @@
         print "<h2>var_dump(string): </h2>"; var_dump("Deepak Verma");
 
         $cars=array("Volvo","BMW","Toyota","Addi", "Mercedes");
-        print "<h2>var_dump(cars): </h2>"; 
-    
+        print "<h2>var_dump(cars): </h2><br>"; 
+      echo "Word count for [Deepak verma is a good human being!] : "; 
+      echo str_word_count("Deepak verma is a good human being!<br>");
+      echo "<br>";
         var_dump($cars);
+        echo "<br>Minimum value of the array : ";
+        echo(min(0, 150, 30, 20, -8, -200));  // returns -200
+        echo "<br>Maximum value of the array : ";
+    echo(max(0, 150, 30, 20, -8, -200));  // returns 150
+    echo "<br>Value of pi : ".pi();
+    echo "<br>rand() generates a random number : ".rand(1,1000);
         ?>
     </body>
 </html>
