@@ -98,6 +98,36 @@
     {
         echo $cars[$x]."<br>";
     }
+   echo "<br><h2>PHP Superglobal -_SERVER</h2>";
+   echo "Server name : ".$_SERVER['SERVER_NAME']."<br>";
+    echo "Server port : ".$_SERVER['SERVER_PORT']."<br>";
+    echo "Server software : ".$_SERVER['SERVER_SOFTWARE']."<br>";
+    echo "Server protocol : ".$_SERVER['SERVER_PROTOCOL']."<br>";
+    echo "Server IP : ".$_SERVER['SERVER_ADDR']."<br>";
+    echo "Server root : ".$_SERVER['DOCUMENT_ROOT']."<br>";
+    echo "Server request method : ".$_SERVER['REQUEST_METHOD']."<br>";
+    echo "Server request URI : ".$_SERVER['REQUEST_URI']."<br>";
+    echo "Server query string : ".$_SERVER['QUERY_STRING']."<br>";
+    echo "Server user agent : ".$_SERVER['HTTP_USER_AGENT']."<br>";
+    echo "Server remote address : ".$_SERVER['REMOTE_ADDR']."<br>";
+    echo "Server remote port : ".$_SERVER['REMOTE_PORT']."<br>";
+    
+
+    // FORMS
+    echo "<br><h2>PHP Forms</h2>";
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+    Name: <input type="text" name="fname">
+    <input type="submit">
+  </form>
+    if($_SERVER["REQUEST_METHDO"]=="POST"){
+        $name=$_REQUEST['fnmae'];
+        if(empty($name)){
+            echo "Name is empty, try again!";
+        }
+        else {
+            echo "Hello, How are you doing... $name";
+        }
+    }
 
         ?>
     </body>
