@@ -62,6 +62,43 @@
     #creating a constant with case sensitive name
     define("HELLO","Deepak Verma gonna be an amazing develoepr!");
     echo "<br>This sentence is printed using constant: ".HELLO;
+
+
+    echo "<br><h2>Switch Case</h2>";
+    $favcolor = "yellow";
+    switch ($favcolor) {
+        case "red":
+            echo "Your favorite color is red!";
+            break;
+        case "blue":
+            echo "Your favorite color is blue!";
+            break;
+        case "green":
+            echo "Your favorite color is green!";
+            break;
+        default:
+            echo "Your favorite color is neither red, blue, not green!";
+    }
+
+    echo "<br><h2>While Loop</h2>";
+    $x=1;
+    while($x<=10)
+    {
+        echo "The number is : $x <br>";
+        $x++;
+    }
+    echo "<br><h2>For Loop</h2>";
+    for($x=0;$x<=4;$x++)
+    {
+        echo "The number is : $x <br>";
+    }
+    echo "<br><h2>Array traversal</h2>";
+    $cars=array("BMW","Audi","Toyota","Porsche","Mercedes");
+    for($x=0;$x<count($cars);$x++)
+    {
+        echo $cars[$x]."<br>";
+    }
+
         ?>
     </body>
 </html>
