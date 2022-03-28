@@ -58,6 +58,7 @@
     echo(max(0, 150, 30, 20, -8, -200));  // returns 150
     echo "<br>Value of pi : ".pi();
     echo "<br>rand() generates a random number : ".rand(1,1000);
+    echo "<h3>Constants</h3><hr/>";
     #creating a constant with case sensitive name
     define("HELLO","Deepak Verma gonna be an amazing develoepr!");
     echo "<br>This sentence is printed using constant: ".HELLO;
