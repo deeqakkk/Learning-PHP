@@ -21,7 +21,15 @@
     
         }
         myTest();
-        echo "Sum of x + y = ".($x+$y)."<hr/>";
+        echo "Sum of x + y = ".($x+$y)."<hr/>"; 
+        $cars=array("BMW","Audi","Toyota","Porsche","Mercedes");
+        for($x=0;$x<count($cars);$x++)
+        {
+            echo $cars[$x]."<hr/>";
+        }
+        print "<h2>var_dump(x) : </h2>"; var_dump(1234);
+        print "<h2>var_dump(string): </h2>"; var_dump("Deepak Verma");
+        echo "<hr/>";
         ?>
     </body>
 </html>

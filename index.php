@@ -44,8 +44,7 @@
         print "Deepak Verma is a good boy, currently he is learning PHP<br>";
         print "This sentence is displayed using 'print' in PHP<br>";
 
-        print "<h2>var_dump(x) : </h2>"; var_dump(1234);
-        print "<h2>var_dump(string): </h2>"; var_dump("Deepak Verma");
+      
 
         $cars=array("Volvo","BMW","Toyota","Addi", "Mercedes");
         print "<h2>var_dump(cars): </h2><br>"; 
@@ -93,11 +92,7 @@
         echo "The number is : $x <br>";
     }
     echo "<br><h2>Array traversal</h2>";
-    $cars=array("BMW","Audi","Toyota","Porsche","Mercedes");
-    for($x=0;$x<count($cars);$x++)
-    {
-        echo $cars[$x]."<br>";
-    }
+   
    echo "<br><h2>PHP Superglobal -_SERVER</h2>";
    echo "Server name : ".$_SERVER['SERVER_NAME']."<br>";
     echo "Server port : ".$_SERVER['SERVER_PORT']."<br>";
@@ -113,22 +108,7 @@
     echo "Server remote port : ".$_SERVER['REMOTE_PORT']."<br>";
     
 
-    // FORMS
-    echo "<br><h2>PHP Forms</h2>";
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-    Name: <input type="text" name="fname">
-    <input type="submit">
-  </form>
-    if($_SERVER["REQUEST_METHDO"]=="POST"){
-        $name=$_REQUEST['fnmae'];
-        if(empty($name)){
-            echo "Name is empty, try again!";
-        }
-        else {
-            echo "Hello, How are you doing... $name";
-        }
-    }
-
+ 
     
         ?>
     </body>
